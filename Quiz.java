@@ -38,9 +38,12 @@ public class Quiz {
     }
 
     private final Question[] questions = {
-            new Question("1 + 1 = ?", new String[]{"100", "9", "2", "0"}, "2"),
-            new Question("3 - 3 = ?", new String[]{"15", "7", "0", "11"}, "0"),
-            // ... add other questions similarly
+           new Question("10 + 1 = ?", new String[]{"100", "9", "11", "0"}, "11"),
+            new Question("28 - 3 = ?", new String[]{"15", "25", "0", "11"}, "25"),
+            new Question("5 * 10 = ?", new String[]{"50", "7", "44", "11"}, "50"),
+            new Question("which city is the capitol of france?", new String[]{"berlin", "paris", "jerusalem", "tokyo"}, "paris"),
+            new Question("which color you get from blue and yellow = ?", new String[]{"green", "red", "purple", "blue"}, "green"),
+            new Question("(3)^4 = ?", new String[]{"12", "9", "58", "64"}, "64"),
     };
 
     private int currentIndex = 0, correctAnswersCount = 0;
